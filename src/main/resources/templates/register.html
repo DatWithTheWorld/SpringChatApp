@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Register - Spring Boot WebSocket Chat</title>
+    <link rel="stylesheet" href="/css/main.css" />
+</head>
+<body>
+<div class="auth-page">
+    <div class="auth-container">
+        <h2>Đăng ký</h2>
+        <form action="/register" method="post" class="auth-form" enctype="multipart/form-data">
+            <div class="form-group">
+                <input type="text" name="username" placeholder="Username" required class="form-control"/>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Email" required class="form-control"/>
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" placeholder="Password" required class="form-control"/>
+            </div>
+            <div class="form-group">
+                <label for="image">Profile Image:</label>
+                <input type="file" name="image" id="image" accept="image/*" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="primary">Đăng ký</button>
+            </div>
+            <div class="auth-links">
+                <a href="/login">Đã có tài khoản? Đăng nhập</a>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,327 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.58;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.hidden {
+    display: none;
+}
+
+.form-control {
+    width: 100%;
+    min-height: 38px;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    outline: none;
+    border: none;
+    font-size: 20px
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.username-page-container {
+    background: #fff;
+    box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
+    border-radius: 2px;
+    width: 100%;
+    max-width: 500px;
+    display: inline-block;
+    margin-top: 42px;
+    vertical-align: middle;
+    position: relative;
+    padding: 35px 55px 35px;
+    min-height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.username-page-container .username-submit {
+    margin-top: 10px;
+}
+
+#chat-page {
+    position: relative;
+    height: 100%;
+}
+
+.chat-container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255,255,255,0);
+    box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
+    margin-top: 30px;
+    height: 80vh;
+    max-height: 600px;
+    border-radius: 20px;
+    position: relative;
+    display: flex !important;
+}
+.chat-main{
+    width: 100%;
+}
+#chat-page ul {
+    list-style-type: none;
+    background-color: rgba(255,255,255,0);
+    margin: 0;
+    overflow: auto;
+    overflow-y: scroll;
+    padding: 0 20px 0px 20px;
+    height: calc(100% - 150px);
+}
+
+#messageForm {
+    padding: 20px;
+}
+
+#messageForm .input-group input {
+    float: left;
+    width: calc(100% - 85px);
+}
+
+#messageForm .input-group button {
+    float: left;
+    width: 80px;
+    height: 38px;
+    margin-left: 5px;
+}
+
+.chat-header {
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #ececec;
+}
+
+.chat-header h2 {
+    margin: 0;
+    font-weight: 500;
+}
+
+.connecting {
+    padding-top: 40px;
+    text-align: center;
+    color: #777;
+    position: absolute;
+    top: 65px;
+    width: 100%;
+}
+
+@media screen and (max-width: 730px) {
+    .chat-container {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+}
+.auth-page {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-container {
+    background: #fff;
+    box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
+    border-radius: 2px;
+    width: 100%;
+    max-width: 500px;
+    padding: 35px 55px 35px;
+    min-height: 250px;
+}
+
+.auth-form {
+    margin-top: 20px;
+}
+
+.auth-links {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.auth-links a {
+    color: #2196F3;
+    text-decoration: none;
+}
+
+.auth-links a:hover {
+    text-decoration: underline;
+}
+
+/* Updated chat message styles to include profile image */
+.chat-message {
+    position: relative;
+    padding-left: 68px;
+    margin-bottom: 15px;
+}
+.chat-message span{
+    padding: 5px 20px;
+    background-color: #cfc3c3;
+    border-radius: 11px;
+    color: white;
+    text-transform: uppercase;
+}
+.chat-message p{
+    margin: 10px 0 0 0;
+    padding: 5px 20px;
+    background-color: #24bacb;
+    border-radius: 10px;
+    color: #3d3fc2;
+    width: fit-content;
+}
+.online-users ul li{
+    text-transform: uppercase;
+    background-color: #6ecf6e;
+    width: fit-content;
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin: 10px 0;
+}
+.chat-message .profile-image {
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.chat-message i {
+    display: none; /* Hide the avatar letter since we're using images now */
+}
+.chat-body {
+    display: flex;
+}
+
+.online-users {
+    width: 25%;
+    border-right: 1px solid #ccc;
+    padding: 10px;
+}
+
+.chat-content {
+    width: 75%;
+    padding: 10px;
+}
+.chat-body {
+    display: flex;
+}
+
+.online-users {
+    width: 25%;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+}
+
+.online-users h3 {
+    margin-bottom: 10px;
+}
+
+.online-users ul {
+    list-style: none;
+    padding: 0;
+}
+
+.online-users ul li {
+    margin-bottom: 5px;
+}
+.online-user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.online-user .profile-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.online-user span {
+    font-size: 14px;
+    color: #333;
+}
+body{
+    background: url(https://static.vecteezy.com/system/resources/previews/004/804/427/non_2x/merry-christmas-greeting-text-background-design-christmas-pine-tree-element-with-colorful-xmas-ornaments-for-holiday-season-card-decoration-in-green-background-illustration-vector.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form-control{
+    width: 100%;
+    min-height: 38px;
+    font-size: 15px;
+    border: 1px solid #c8c8c8;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.1);
+}
+.auth-container {
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 500px;
+    padding: 37px 55px 35px;
+    min-height: 250px;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #65d4dd;
+    outline: none;
+    border: none;
+    color: white;
+}
+.username-page-container {
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 500px;
+    display: inline-block;
+    margin-top: 42px;
+    vertical-align: middle;
+    position: relative;
+    padding: 35px 55px 35px;
+    min-height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.chat-image {
+    max-width: 200px;
+    max-height: 200px;
+    margin-top: 10px;
+}
